@@ -1,15 +1,15 @@
 #---------------------------------------------------------#
-# getQuotes.py											  #
-# Author: Pirate										  #
+# getQuotes.py						  					  
+# Author: Pirate					  					  
 #---------------------------------------------------------#
 #---------------------------------------------------------#
-# Gets quotes from an array of symbols.					  #
-# Saves quotes in seperate folders for each symbol.       #
-# 														  #	
-# Setup and Run:										  #
-# 1) Set your CoinAPI API key in the 'apiKey' variable.   #
-# 2) Set symbols to gather quotes for in the symbolArray. #
-# 3) Run the script with: python3 getQuotes.py            #
+# Gets quotes from an array of symbols.			  		  
+# Saves quotes in seperate folders for each symbol.       
+# 							  							  	
+# Setup and Run:					  					  
+# 1) Set your CoinAPI API key in the 'apiKey' variable.   
+# 2) Set symbols to gather quotes for in the symbolArray. 
+# 3) Run the script with: python3 getQuotes.py            
 #---------------------------------------------------------#
 import os
 import json
@@ -17,7 +17,7 @@ import requests
 from datetime import datetime
 from json.decoder import JSONDecodeError
 #---------------------------------------------------------#
-# Configuration:
+# Configuration:                                          
 #---------------------------------------------------------#
 apiKey = "YOUR-COINAPI-KEY-HERE" # CoinAPI API Key
 
@@ -32,7 +32,7 @@ symbolArray = [
 	  "COINEX_SPOT_BAN_USDT",
 	  "BINANCE_SPOT_HNT_USDT"]
 #---------------------------------------------------------#
-# DONT EDIT BELOW THIS NOTICE						      #
+# DONT EDIT BELOW THIS NOTICE				  		      
 #---------------------------------------------------------#
 now = datetime.now() # Current Date/Time
 time = now.strftime("%H:%M:%S") # Time as String
